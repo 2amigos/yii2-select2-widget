@@ -1,7 +1,7 @@
 {
     "name": "2amigos/yii2-select2-widget",
-    "description": ":package_description",
-    "type": ":package_type",
+    "description": "Select 2 JQuery plugin for Yii2 with Bootstrap theme capabilities",
+    "type": "yii2-extension",
     "keywords": [
         "2amigos",
         "yii",
