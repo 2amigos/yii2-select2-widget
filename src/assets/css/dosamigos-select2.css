@@ -1,0 +1,11 @@
+.select2-results__option.select2-results__option--load-more,
+.select2-dropdown[dir="rtl"] .select2-results__option.select2-results__option--load-more,
+.select2-results__option.select2-results__option--loading-results,
+.select2-dropdown[dir="rtl"] .select2-results__option.select2-results__option--loading-results
+{
+    font-style: italic;
+    color: #a94442;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background: #fff url('../img/ajax-loader.gif') right 10px center no-repeat;
+}
