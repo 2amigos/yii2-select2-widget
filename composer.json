@@ -4,12 +4,14 @@
     "type": "yii2-extension",
     "keywords": [
         "2amigos",
-        "yii",
         "yii2",
-        "yii 2",
         "extension",
-        ":package_type",
-        "yii2-select2-widget"
+        "widget",
+        "select2",
+        "form",
+        "dropdown",
+        "jquery",
+        "plugin"
     ],
     "homepage": "https://github.com/2amigos/yii2-select2-widget",
     "license": "BSD-3-Clause",
