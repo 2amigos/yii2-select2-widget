@@ -25,7 +25,7 @@ requires some tweaks, are mostly configured throughout the `clientOptions` and `
 configuration of the plugin and its events respectively. 
 
 For that reason, we highly recommend you to visit the 
-[Select2 Documentation](https://select2.github.io/options.html) for the possible options available on Select2 and  
+[Select2 Documentation](https://select2.github.io/options.html) for the possible options available on Select2 and 
 [Select2 Bootstrap Theme](https://select2.github.io/select2-bootstrap-theme/4.0.3.html) to check all the possible 
 display options regarding Select2 with this theme. 
 
