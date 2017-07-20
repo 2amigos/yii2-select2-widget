@@ -1,5 +1,5 @@
 {
-    "name": "2amigos/:package_name",
+    "name": "2amigos/yii2-select2-widget",
     "description": ":package_description",
     "type": ":package_type",
     "keywords": [
@@ -9,9 +9,9 @@
         "yii 2",
         "extension",
         ":package_type",
-        ":package_name"
+        "yii2-select2-widget"
     ],
-    "homepage": "https://github.com/2amigos/:package_name",
+    "homepage": "https://github.com/2amigos/yii2-select2-widget",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -22,8 +22,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/2amigos/:package_name/issues",
-        "source": "https://github.com/2amigos/:package_name"
+        "issues": "https://github.com/2amigos/yii2-select2-widget/issues",
+        "source": "https://github.com/2amigos/yii2-select2-widget"
     },
     "require": {
         "yiisoft/yii2": "~2.0.5",

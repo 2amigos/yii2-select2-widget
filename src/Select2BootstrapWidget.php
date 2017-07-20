@@ -47,6 +47,8 @@ class Select2BootstrapWidget extends Select2Widget
     {
         parent::init();
 
+        $this->clientOptions['theme'] = 'bootstrap';
+
         if (isset($this->options['multiple'])) {
             Html::addCssClass($this->options, 'select2-multiple');
         }
