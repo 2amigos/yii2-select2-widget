@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * This file is part of the 2amigos/yii2-select2-widget project.
+ * (c) 2amigOS! <http://2amigos.us/>
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
 namespace dosamigos\select2;
 
 use yii\helpers\Html;
@@ -11,24 +18,24 @@ class Select2Widget extends InputWidget
 {
     /**
      * @var array $items the option data items. The array keys are option values, and the array values
-     * are the corresponding option labels. The array can also be nested (i.e. some array values are arrays too).
-     * For each sub-array, an option group will be generated whose label is the key associated with the sub-array.
-     * If you have a list of data models, you may convert them into the format described above using
-     * [[\yii\helpers\ArrayHelper::map()]].
+     *            are the corresponding option labels. The array can also be nested (i.e. some array values are arrays too).
+     *            For each sub-array, an option group will be generated whose label is the key associated with the sub-array.
+     *            If you have a list of data models, you may convert them into the format described above using
+     *            [[\yii\helpers\ArrayHelper::map()]].
      *
      * @see [[\yii\helpers\Html::activeDropDownList()]]
      */
     public $items = [];
     /**
      * @var array the options for the underlying Select2 JS plugin.
-     * Please refer to the plugin Web page for possible options.
+     *            Please refer to the plugin Web page for possible options.
      *
      * @see https://select2.github.io/options.html#core-options
      */
     public $clientOptions = [];
     /**
      * @var array the event handlers for the underlying Select2 JS plugin.
-     * Please refer to the corresponding plugin Web page for possible events.
+     *            Please refer to the corresponding plugin Web page for possible events.
      *
      * @see https://select2.github.io/options.html#events
      */
@@ -54,7 +61,7 @@ class Select2Widget extends InputWidget
     {
         $view = $this->getView();
 
-       $this->registerBundle($view);
+        $this->registerBundle($view);
 
         $options = !empty($this->clientOptions)
             ? Json::encode($this->clientOptions)

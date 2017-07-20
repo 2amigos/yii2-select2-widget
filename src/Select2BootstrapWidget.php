@@ -1,5 +1,12 @@
 <?php
 
+/*
+ * This file is part of the 2amigos/yii2-select2-widget project.
+ * (c) 2amigOS! <http://2amigos.us/>
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
 namespace dosamigos\select2;
 
 use yii\bootstrap\Html;
@@ -9,9 +16,9 @@ class Select2BootstrapWidget extends Select2Widget
 {
     /**
      * @var string the template to render the dropdown box that will be converted by select2 plugin. It is highly
-     * recommended that you use \yii\bootstrap\ActiveForm when using
-     * `$this->form($model, 'attribute')->widget(Select2Widget::class, [])` as it will handle the rest of the wrapping
-     * required for a proper Bootstrap input. If you wish to display Select2 with prepended and appended addons:
+     *             recommended that you use \yii\bootstrap\ActiveForm when using
+     *             `$this->form($model, 'attribute')->widget(Select2Widget::class, [])` as it will handle the rest of the wrapping
+     *             required for a proper Bootstrap input. If you wish to display Select2 with prepended and appended addons:
      *
      * ```
      * 'template' => '<div class="input-group">' .
