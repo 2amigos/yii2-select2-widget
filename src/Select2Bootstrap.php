@@ -12,7 +12,7 @@ namespace dosamigos\select2;
 use yii\bootstrap\Html;
 use yii\web\View;
 
-class Select2BootstrapWidget extends Select2Widget
+class Select2Bootstrap extends Select2
 {
     /**
      * @var string the template to render the dropdown box that will be converted by select2 plugin. It is highly

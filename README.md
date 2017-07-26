@@ -37,14 +37,14 @@ display options regarding Select2 with this theme.
 ### Using Select2Widget
 
 ```php 
-use dosamigos\select2\Select2Widget:
+use dosamigos\select2\Select2:
 
 
 // with \yii\bootstrap\ActiveForm;
 echo $form
     ->field($model, 'attribute')
     ->widget(
-        Select2Widget::class, 
+        Select2::class, 
         [
             'items' => $data, // $data should be the same as the items provided to a regular yii2 dropdownlist
             'clientOptions' => ['theme' => 'classic']
@@ -52,7 +52,7 @@ echo $form
     );
     
 // as widget 
-echo Select2Widget::widget([
+echo Select2::widget([
     'name' => 'my-name',
     'value' => 'my-value',
     'clientOptions' => [
@@ -64,13 +64,13 @@ echo Select2Widget::widget([
 ### Using Select2BootstrapWidget 
 
 ```php 
-use dosamigos\select2\Select2BootstrapWidget:
+use dosamigos\select2\Select2Bootstrap:
 
 // displaying the select2 with prepended addon
 echo $form
     ->field($model, 'attribute')
     ->widget(
-        Select2BootstrapWidget::class, 
+        Select2Bootstrap::class, 
         [
             'items' => $data, // $data should be the same as the items provided to a regular yii2 dropdownlist
             'template' => '<div class="input-group">' .
@@ -86,7 +86,7 @@ echo $form
     );
     
 // as widget 
-echo Select2BootstrapWidget::widget([
+echo Select2Bootstrap::widget([
     'name' => 'my-name',
     'value' => 'my-value',
     'clientOptions' => [

@@ -16,7 +16,7 @@ use yii\helpers\Json;
 use yii\web\View;
 use yii\widgets\InputWidget;
 
-class Select2Widget extends InputWidget
+class Select2 extends InputWidget
 {
     /**
      * @var array $items the option data items. The array keys are option values, and the array values
