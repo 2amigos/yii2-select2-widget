@@ -9,7 +9,6 @@
 
 namespace dosamigos\select2;
 
-use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
