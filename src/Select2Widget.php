@@ -9,6 +9,8 @@
 
 namespace dosamigos\select2;
 
+use yii\base\InvalidConfigException;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\View;
@@ -67,7 +69,7 @@ class Select2Widget extends InputWidget
             ? Json::encode($this->clientOptions)
             : '';
 
-        $id = $this->getId();
+        $id = $this->options['id'];
 
         $js[] = ";jQuery('#$id').select2($options);";
         if (!empty($this->clientEvents)) {
