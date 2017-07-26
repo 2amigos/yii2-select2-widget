@@ -5,9 +5,9 @@
 [![Build Status](https://img.shields.io/travis/2amigos/yii2-select2-widget/master.svg?style=flat-square)](https://travis-ci.org/2amigos/yii2-select2-widget)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/2amigos/yii2-select2-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-select2-widget/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/2amigos/yii2-select2-widget.svg?style=flat-square)](https://scrutinizer-ci.com/g/2amigos/yii2-select2-widget)
-[![Total Downloads](https://img.shields.io/packagist/dt/2amigos/yii2-select2-widget.svg?style=flat-square)](https://packagist.org/packages/2amigos/yii2-select2-widget)
+[![Total Downloads](https://poser.pugx.org/2amigos/yii2-select2-widget/downloads)](https://packagist.org/packages/2amigos/yii2-select2-widget)
 
-(Select2)[https://select2.github.io/] gives you a customizable select box with support for searching, tagging, remote 
+[Select2](https://select2.github.io/) gives you a customizable select box with support for searching, tagging, remote 
 data sets, infinite scrolling, and many other highly used options.
 
 ## Install
