@@ -46,6 +46,36 @@ class Select2Widget extends InputWidget
     /**
      * @inheritdoc
      */
+    public function init()
+    {
+        parent::init();
+        $this->initPlaceholder();
+    }
+
+    /**
+     * Select2 plugin placeholder check and initialization
+     */
+    protected function initPlaceholder()
+    {
+        $multipleSelection = ArrayHelper::getValue($this->options, 'multiple');
+
+        if (!empty($this->options['prompt']) && empty($this->clientOptions['placeholder'])) {
+            $this->clientOptions['placeholder'] = $multipleSelection
+                ? ArrayHelper::remove($this->options, 'prompt')
+                : $this->options['prompt'];
+        } elseif (!empty($this->options['placeholder'])) {
+            $this->clientOptions['placeholder'] = ArrayHelper::remove($this->options, 'placeholder');
+        }
+        if(!empty($this->clientOptions['placeholder']) && !$multipleSelection) {
+            $this->options['prompt'] = is_string($this->clientOptions['placeholder'])
+                ? $this->clientOptions['placeholder']
+                : ArrayHelper::getValue((array) $this->clientOptions['placeholder'], 'placeholder', '');
+        }
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function run()
     {
         if ($this->hasModel()) {
