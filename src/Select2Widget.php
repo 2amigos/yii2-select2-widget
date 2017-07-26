@@ -67,7 +67,7 @@ class Select2Widget extends InputWidget
             ? Json::encode($this->clientOptions)
             : '';
 
-        $id = $this->getId();
+        $id = ArrayHelper::remove($this->clientOptions, 'selector', $this->options['id']);
 
         $js[] = ";jQuery('#$id').select2($options);";
         if (!empty($this->clientEvents)) {
