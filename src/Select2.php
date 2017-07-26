@@ -62,13 +62,15 @@ class Select2 extends InputWidget
             $this->clientOptions['placeholder'] = $multipleSelection
                 ? ArrayHelper::remove($this->options, 'prompt')
                 : $this->options['prompt'];
+
+            return null;
         } elseif (!empty($this->options['placeholder'])) {
             $this->clientOptions['placeholder'] = ArrayHelper::remove($this->options, 'placeholder');
         }
-        if(!empty($this->clientOptions['placeholder']) && !$multipleSelection) {
+        if (!empty($this->clientOptions['placeholder']) && !$multipleSelection) {
             $this->options['prompt'] = is_string($this->clientOptions['placeholder'])
                 ? $this->clientOptions['placeholder']
-                : ArrayHelper::getValue((array) $this->clientOptions['placeholder'], 'placeholder', '');
+                : ArrayHelper::getValue((array)$this->clientOptions['placeholder'], 'placeholder', '');
         }
     }
 
