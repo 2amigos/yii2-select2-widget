@@ -10,6 +10,7 @@
 namespace dosamigos\select2;
 
 use yii\bootstrap\Html;
+use yii\helpers\ArrayHelper;
 use yii\web\View;
 
 class Select2Bootstrap extends Select2
@@ -35,10 +36,6 @@ class Select2Bootstrap extends Select2
      * That way you don't need to deal with the template from the \yii\bootstrap\ActiveField class.
      */
     public $template = '{input}';
-    /**
-     * @var bool whether to allow to clear the contents.
-     */
-    public $allowClear = true;
 
     /**
      * @inheritdoc
@@ -52,7 +49,8 @@ class Select2Bootstrap extends Select2
         if (!empty($this->options['multiple'])) {
             Html::addCssClass($this->options, 'select2-multiple');
         }
-        if ($this->allowClear) {
+
+        if (ArrayHelper::getValue($this->clientOptions, 'allowClear')) {
             Html::addCssClass($this->options, 'select2-allow-clear');
         }
     }
